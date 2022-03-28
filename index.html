@@ -140,6 +140,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Aircrack-Wi-Fi攻击" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/03/28/Aircrack-Wi-Fi%E6%94%BB%E5%87%BB/">Aircrack Wi-Fi攻击</a>
+    </h1>
+  
+
+        
+        <a href="/2022/03/28/Aircrack-Wi-Fi%E6%94%BB%E5%87%BB/" class="archive-article-date">
+  	<time datetime="2022-03-28T04:12:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><pre><code>Kaili虚拟机
+带监听功能的无线网卡
+</code></pre>
+<h2 id="调试网卡"><a href="#调试网卡" class="headerlink" title="调试网卡"></a>调试网卡</h2><pre><code>进入Kaili虚拟机
+插上网卡
+打开终端 测试当前的网卡状态
+    iwconfig
+images：/Users/jdm/blog/source/images/网卡状态1.jpg
+可以看到 Mode:Manage 并未开启监听模式 (monitor)
+输入开启指令    
+    sudo airmon-ng start wlan0
+再次查看
+    iwconfig
+images：/Users/jdm/blog/source/images/网卡状态2.jpg
+可以看到 Mode:Monitor 开启监听模式
+</code></pre>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/03/28/Aircrack-Wi-Fi%E6%94%BB%E5%87%BB/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-My-first-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
